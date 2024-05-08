@@ -108,5 +108,10 @@ _Later I'll add some instructions on how to create different Synchronizer and ho
 
 
 ### references
-[Rails guide on Engines](https://guides.rubyonrails.org/engines.html)
-[How to set customization](https://medium.com/@asimadnan/using-a-model-provided-by-the-application-inside-rails-engine-cddc119749d2)
+[Rails guide on Engines](https://guides.rubyonrails.org/engines.html)  
+[How to set customization](https://medium.com/@asimadnan/using-a-model-provided-by-the-application-inside-rails-engine-cddc119749d2)  
+
+existing (outdated) gems:  
+[feedback]([url](https://github.com/jsboulanger/feedback)) (~12 years no activity)
+[pointless-feedback]([url](https://github.com/vigetlabs/pointless-feedback)) (~2 years no activity)
+
