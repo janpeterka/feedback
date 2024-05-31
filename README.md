@@ -37,12 +37,12 @@ Without further ado:
 # overview
 
 ## needs
-User wants to post feedback (possibly with attachments - screenshots of bug or similar)  
-User wants to see status of feedback, and possible reactions from _someone (you)_  
-  -> User wants to be notified if something new happens 
-User should be able to provide additional information (add note/reaction to feedback)  
+User wants to **post feedback** (possibly with attachments - screenshots of bug or similar)  
+User wants to **see status** of feedback, and possible reactions from _someone (you)_  
+  -> User wants to **be notified** if something new happens  
+User should be able to **provide additional information** (add note/reaction to feedback)  
 
-Admin should be notified on new feedback.  
+Admin should be **notified** on new feedback.  
 Admin can change status, ask questions, explain situation,..  
 
 ## level 1 - local Feedback::Post and Feedback::Comment
@@ -54,7 +54,7 @@ They provide that through from on `/feedback/new` page (by default).
 `Feedback::Post` has following attributes:
   - timestamps
   - `author_id`
-    this is expected to point to `User` class, but if your applications uses some other thing (like `Member`), this needs to be configurable
+    this is expected to point to `User` class, but if your applications uses some other thing (like `Member`), this needs to be configured (more on that later)
   - `status` - enum with `new, open, closed, completed` states
   - `text` - I decided **not** to make this `ActionText`, as not everyone uses that, and it's not really important to have that smart text. Maybe I will add support for `ActionText` later.
   - attachments - which **are** `ActiveStorage`. If you don't use that, it should be possible to just use form without file section, so nothing can be uploaded.
@@ -76,9 +76,9 @@ Admin has their own endpoint - `feedback/admin/`.
 Only author and admins are permitted to view feedback post.
 
 ### configurations
-Class of author (default: `User`)
-Method to specify current author (default: `current_user`)
-  -> I expect you to use `current_user`, but if that's not a case, you can override that by setting `current_feedback_author` in your `ApplicationController` (will this work? it should if we inherit `Feedback::ApplicationController` from `::ApplicationController`)
+Class of author (default: `User`)  
+Method to specify current author (default: `current_user`)  
+  -> I expect you to use `current_user`, but if that's not a case, you can override that by setting `current_feedback_author` in your `ApplicationController` (will this work? it should if we inherit `Feedback::ApplicationController`   from `::ApplicationController`)   [!! not currently implemented]
 
 ## level 2 - notifications
 
@@ -90,7 +90,7 @@ It's generated in these moments:
 - on status change - for author
 - on new comment
 
-It's marked read on opening detail of given feedback post.
+It's marked read on opening detail of given feedback post, or manually from "dashboard"
 
 ## level 3 - external systems
 Maybe you don't want feedback in your app. Maybe you want it in your Gitlab, where you collect and manage all issues!
