@@ -23,7 +23,7 @@ Currently I like `i-want-to-know` most. Because:
 Yeah, but I'm still not sure.
 
 # premise
-Collect feedback in Rails app with ease
+Collect feedback from users in Rails app with ease
 
 ## what does that mean?
 You probably want to collect feedback from your users.  
