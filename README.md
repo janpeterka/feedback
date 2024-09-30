@@ -34,6 +34,11 @@ But how to collect feedback?
 There are for sure many ways:
 - just stick link to Google form somewhere for them!
 - connect some supercomplex tool like Adoric or I don't know.
+- use some existing gem!
+  - I looked for one, and I'm not happy for my imagined usecase:
+    - `feedback_gem` ([rubygems])(https://rubygems.org/gems/feedback_gem) doesn't have activity since 2019. I depends on Bootstrap and jQuery, and it's mail-based, not in-app.
+    - `pointless_feedback` ([rubygems](https://rubygems.org/gems/pointless_feedback)) seems most mature and complete solution, but it's missing conversations. I will look more into what it does, and probably take some inspiration from them.
+    - some other, which were abandoned, very early versions and such
 - tell them to create issues in your Github/Gitlab/Gitwhatnot repository (as if that will happen).
 - create your own in-app solution
 
