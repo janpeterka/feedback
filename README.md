@@ -5,6 +5,23 @@ I don't care.
 This project is in my head and some parts of code in different project for some time, and I wanted to create a place where I will thoroughly describe it before it will become reality.  
 Writing about **what it needs to** do and **how developer will interact with it** helps me make sense of it and how it will be implemented.
 
+---
+
+I'm still not sure about name for this.
+`feedback` is already existing gem, so I need something different.
+I thougt about taking some Japanese versions, one is `Fīdobakku`, another is (probably) `饋還`.
+Another ideas are:
+- `i-want-to-know`
+- `tell-me`
+- `solid_feedback`
+
+Currently I like `i-want-to-know` most. Because:
+> Do you have any problems with using my app? I want to know!
+> Do you have any ideas how I can improve it? I want to know!
+> Do you want to communicte with me anything else? I want to know!
+
+Yeah, but I'm still not sure.
+
 # premise
 Collect feedback in Rails app with ease
 
